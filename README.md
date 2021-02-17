@@ -1,5 +1,5 @@
-# GM-Module-Template
-A template module to get you building modules faster!
+# GM-Better-Animations
+Adds animations to a bunch of stuff.
 
 ## Preview Images
 ![](https://raw.githubusercontent.com/Controlfreak707/GM-Module-Template/main/images/image-a.png)
