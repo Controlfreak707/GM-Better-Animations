@@ -31,8 +31,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          stylePing = document.createElement("style").appendChild(
-            document.createTextNode(`.numberBadge-2s8kKX {
+          stylePing = document.createElement("style");
+          stylePing.textContent = `.numberBadge-2s8kKX {
               animation: animatedPing 1.5s infinite ease-in-out;
             }
       
@@ -46,8 +46,7 @@ function updateSetting(setting, value = settings[setting]) {
               100% {
                 transform: rotate(-15deg);
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(stylePing);
         }
         break;
@@ -57,8 +56,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          styleModals = document.createElement("style").appendChild(
-            document.createTextNode(`.focusLock-Ns3yie, .modal-3c3bKg {
+          styleModals = document.createElement("style");
+          styleModals.textContent = `.focusLock-Ns3yie, .modal-3c3bKg {
               animation: Modal 1000ms linear both;
             }
       
@@ -141,8 +140,7 @@ function updateSetting(setting, value = settings[setting]) {
               100% {
                 transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(styleModals);
         }
         break;
@@ -152,8 +150,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          styleProfile = document.createElement("style").appendChild(
-            document.createTextNode(`.headerPlaying-j0WQBV,
+          styleProfile = document.createElement("style");
+          styleProfile.textContent = `.headerPlaying-j0WQBV,
             .topSectionPlaying-1J5E4n {
               z-index: 1;
               background: url(https://cdn.naila.bot/Discord/playing-background.svg), #7289da;
@@ -185,8 +183,7 @@ function updateSetting(setting, value = settings[setting]) {
               50% {
                 background-position: bottom center;
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(styleProfile);
         }
         break;
@@ -196,8 +193,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          styleChannelMute = document.createElement("style").appendChild(
-            document.createTextNode(`.iconWrapper-2OrFZ1[role="switch"]:hover {
+          styleChannelMute = document.createElement("style");
+          styleChannelMute.textContent = `.iconWrapper-2OrFZ1[role="switch"]:hover {
               animation: Notif 1.5s infinite ease-in-out;
             }
       
@@ -211,8 +208,7 @@ function updateSetting(setting, value = settings[setting]) {
               100% {
                 transform: rotate(-10deg);
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(styleChannelMute);
         }
         break;
@@ -222,8 +218,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          styleCall = document.createElement("style").appendChild(
-            document.createTextNode(`.iconWrapper-2OrFZ1[aria-label="Start Voice Call"]:hover .icon-22AiRD {
+          styleCall = document.createElement("style");
+          styleCall.textContent = `.iconWrapper-2OrFZ1[aria-label="Start Voice Call"]:hover .icon-22AiRD {
               animation: CallButton 1500ms infinite linear both;
             }
       
@@ -1341,8 +1337,7 @@ function updateSetting(setting, value = settings[setting]) {
               100% {
                 transform: matrix3d(0.977, 0, 0, 0, 0, 0.977, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(styleCall);
         }
         break;
@@ -1352,8 +1347,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          stylePins = document.createElement("style").appendChild(
-            document.createTextNode(`.iconWrapper-2OrFZ1[aria-label="Pinned Messages"]:hover .icon-22AiRD {
+          stylePins = document.createElement("style");
+          stylePins.textContent = `.iconWrapper-2OrFZ1[aria-label="Pinned Messages"]:hover .icon-22AiRD {
               animation: PinsHover 1500ms linear both;
             }
             .iconWrapper-2OrFZ1[aria-label="Pinned Messages"].selected-1GqIat .icon-22AiRD {
@@ -1967,8 +1962,7 @@ function updateSetting(setting, value = settings[setting]) {
                   1
                 );
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(stylePins);
         }
         break;
@@ -1978,8 +1972,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          styleUpdate = document.createElement("style").appendChild(
-            document.createTextNode(`.iconWrapper-2OrFZ1[aria-label="Update Ready!"]:hover .icon-22AiRD {
+          styleUpdate = document.createElement("style");
+          styleUpdate.textContent = `.iconWrapper-2OrFZ1[aria-label="Update Ready!"]:hover .icon-22AiRD {
               animation: Update 1500ms linear both;
             }
       
@@ -2141,8 +2135,7 @@ function updateSetting(setting, value = settings[setting]) {
                 clip-path: inset(0px 0px 8px 0px);
                 transform: matrix3d(0, -1.25, 0, 0, 1.25, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(styleUpdate);
         }
         break;
@@ -2152,8 +2145,8 @@ function updateSetting(setting, value = settings[setting]) {
         } catch {}
 
         if (value) {
-          styleUserButtons = document.createElement("style").appendChild(
-            document.createTextNode(`.button-14-BFJ:hover .contents-18-Yxp {
+          styleUserButtons = document.createElement("style");
+          styleUserButtons.textContent = `.button-14-BFJ:hover .contents-18-Yxp {
               animation: UserModalButtons 0.5s normal ease;
             }
             .container-3baos1 .noWrap-3jynv6 {
@@ -2178,8 +2171,7 @@ function updateSetting(setting, value = settings[setting]) {
               100% {
                 transform: translateY(0px);
               }
-            }`)
-          );
+            }`;
           document.head.appendChild(styleUserButtons);
         }
         break;
